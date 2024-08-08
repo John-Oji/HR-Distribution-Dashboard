@@ -201,7 +201,7 @@ SELECT jobtitle, COUNT (*) AS count
 	
 	
 
-------### This code helps identify the most common job titles or roles within an organization, ignoring variations due to Roman numerals.
+------### This code helps identify the most common job titles or roles within an organization, ignoring variations due to seniority level/Roman numerals.
 SELECT 
     REGEXP_REPLACE(jobtitle, ' [IVX]+$', '') AS jobtitle_group, 
     COUNT(*) AS count
@@ -214,7 +214,7 @@ ORDER BY count DESC;
 ----##
 
 
-----
+---- What are the departments with the most active employees, ignoring department name variations due to team or subgroup identifiers.
 SELECT 
     REGEXP_REPLACE(department, ' [IVX]+$', '') AS department_group,
     COUNT(*) AS employee_count
@@ -226,7 +226,7 @@ ORDER BY employee_count DESC;
 
 
 
---
+--What are the departments with the most employees (active and non active employees), along with their average employee tenure, ignoring department name variations due to team or subgroup identifiers
 SELECT 
     REGEXP_REPLACE(department, ' [IVX]+$', '') AS department_group,
     COUNT(*) AS employee_count,
@@ -377,8 +377,5 @@ GROUP BY department
 ORDER BY avg_tenure_years DESC;
 
 
----12. WHAT IS THE AGE DISTRIBUTION OF THE EMPLOYEES
-
-------13.
 
   
