@@ -78,13 +78,13 @@ LIMIT 1;
   
 - The department with the highest turnover rate is Auditing while the department with the least turnover rate is Marketing.
 
-- The year 2010 has the highest attrition rate.
-
 - A large number of employees(15,923) come from the state of Ohio while the least number of employees come from wisconsin (338)
   
 - The net change in employees has increased over the years.
 
 - The average tenure for each department is about 12 years with Auditing and Legal having the highest while Marketing and Business Develpoment have the lowest.
+
+- The year 2010 has the highest attrition rate, with an attrition rate of 1.06.
 
 
 ### Limitation
@@ -93,6 +93,8 @@ LIMIT 1;
 - Job titles are not standardized, leading to difficulties in grouping and comparing similar roles. Variations in job titles made it hard to analyze job-specific trends.
   
 - The data lacks contextual information such as performance metrics, job satisfaction scores, or reasons for termination, which can provide deeper insights into HR trends and issues.
+
+- The data does not provide information on the circumstances surrounding employee terminations or resignations, without knowing the reasons for employee departures, it is difficult to identify trends or patterns that could indicate underlying issues within the organization, such as management problems, poor working conditions, or other systemic issues.
 
 
 ###  Recommendation
